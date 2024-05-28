@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Lab #2</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__item">
+                <h1 class="header__item-title text-features">Laboratory Work # 2</h1>
+                <h2 class="header__item-text text-features">by Larychev Yehor</h2>
+                <h2 class="header__item-text text-features">Theme - Conditional statements in JavaScript (if, else, else if).</h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__item text-features">
+                <div class="responce" id="if_app"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__item text-features">(c) 2024 Larychev Yehor CST 3.01</div>
+        </footer>
+   </div>
+   <script>
+    let language = prompt('Enter your language here - ENG, UA, RUS or DE', 'UA');
+    const ENG = 'Hi there! How are you?'
+    const UA = 'Здоровеньки були!'
+    const RUS = 'Привет!'
+    const DE = 'Guten Tag mein Lieber, wie geht es dir?!'
+    let confirm_step = confirm('Are you sure?')
+    if(language == 'ENG') {
+        document.getElementById('if_app').innerHTML = ENG;
+    } else if(language == 'UA') {
+        document.getElementById('if_app').innerHTML = UA;
+    } else if(language == 'RUS') {
+        document.getElementById('if_app').innerHTML = RUS;
+    } else if(language == 'DE') {
+        document.getElementById('if_app').innerHTML = DE;
+    } else {
+        document.getElementById('if_app').innerHTML = 'I don\'t understand you.';
+    }
+   </script>
+</body>
+</html>

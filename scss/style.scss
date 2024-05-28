@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    background-color: powderblue;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+.header {
+}
+.header__item {
+}
+.header__item-title {
+}
+.header__item-text {
+}
+.main {
+    flex: 1 0 auto;
+}
+.main__item {   
+    height: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+.footer__item {
+    line-height: 3;
+    letter-spacing: 1,5px;
+    word-spacing: 2px;
+
+}
+
+.text-features {
+    text-align: center;
+}
+
+.responce {
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
